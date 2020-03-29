@@ -7,8 +7,8 @@ class NewVisitorTest(unittest.TestCase):  #1
         self.browser = webdriver.Firefox(log_path=r"D:/geckodriver.log")
         self.browser.implicitly_wait(100)
 		
-    #def tearDown(self):  #3
-     #   self.browser.quit()
+    def tearDown(self):  #3
+        self.browser.quit()
 
     def test_can_start_a_list_and_retrieve_it_later(self):  #4
         # Edith has heard about a cool new online to-do app. She goes
@@ -22,4 +22,4 @@ class NewVisitorTest(unittest.TestCase):  #1
       
 
 if __name__ == '__main__':  #7
-    unittest.main(warnings='ignore')  #8
+    unittest.main(warnings='ignore')  #8888888888
